@@ -1,0 +1,107 @@
+/* 获取登陆信息 */
+function get_user_info() {
+    $.ajax({
+        type: 'POST',
+        url: GLOBALS_VARS.site_www + '/user/ajax/get_user_info',
+        dataType: 'json',
+        success:function(json) {
+            if(json.code == 0) {
+                $('.header .user-nav').html('<li><a href="javascript:;" data-reveal-id="login-modal" data-animation="fade" data-closeonbackgroundclick="false" class="login"><i class="sprite account"></i><em>登录</em></a></li>');
+            }else{
+                $('.header .user-nav').html('<li><a href="javascript:;"><i class="sprite account"></i><em>' + json.data.nickname + '</em></a></li><li><a href="' + GLOBALS_VARS.site_www + '/user/account/logout"><em>退出</em></a></li>');
+                $('.join-us').attr('data-reveal-id', '').text('立即参与');
+            }
+        }
+    });
+}
+
+/* 信息提示框 */
+function show_modal_msg(message) {
+    $('body').append('<div id="information-modal" class="reveal-modal"><h1>' + message + '</h1><a class="close-reveal-modal">&#215;</a></div>');
+    $('#information-modal').reveal();
+    setTimeout(function(){
+        hide_modal_msg();
+    }, 1500);
+}
+
+function hide_modal_msg() {
+    $("#information-modal .close-reveal-modal").trigger('click');
+    $("#information-modal").remove();
+}
+
+$(document).ready(function(){
+    /* 获取登陆信息 */
+    get_user_info();
+
+    /* 图片预载 */
+    $(".loading-v1").scrollLoading();
+
+    /* 微信弹出 */
+    $(".sub-nav li, .shortcut-nav li, .operate-handle li").hover(
+        function() {
+            $(this).find(".sub").stop().fadeIn(500);
+        },
+        function() {
+            $(this).find(".sub").stop().fadeOut();
+        }
+    );
+
+    /* 登陆 */
+    $("#login-form").validate({
+        rules: {
+            username: {
+                required: true
+            },
+            password: {
+                required: true,
+                rangelength:[6, 16]
+            }
+        },
+        messages: {
+            username: {
+                required: '请填写用户名'
+            },
+            password: {
+                required: '请填写密码',
+                rangelength: $.validator.format("密码长度为{0}~{1}位")
+            }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                dataType:  'json',
+                beforeSubmit:
+                    function(formData, jqForm, options) {
+                        $(".login-wrap .login-error").hide();
+                        $(".login-submit input").attr({"disabled": true, "value": '登录中…'});
+                        return true;
+                    },
+                success:
+                    function(json, status) {
+                        if(json.code == 0) {
+                            $(".login-wrap .login-error").html(json.message).show();
+                        }else {
+                            /* 获取登陆信息 */
+                            get_user_info();
+                            $("#login-modal .close-reveal-modal").trigger('click');
+                        }
+                        $(".login-submit input").attr({"disabled": false, "value": '登录'});
+                    }
+            });
+            return false;
+        }
+    });
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 500) {
+            $('#gotoTop').fadeIn();
+        } else {
+            $('#gotoTop').fadeOut();
+        };
+    });
+
+    $('#gotoTop a').click(function() {
+        $('html, body').animate({scrollTop: 0}, 800);
+        return false;
+    });
+
+});

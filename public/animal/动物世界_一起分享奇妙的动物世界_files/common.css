@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/* 整体框架 */
+.wrapper {width: 100%; overflow: hidden}
+	.main {min-width: 1100px}
+		.header {height: 36px; border-bottom: 1px solid #898989; background: #000; position: relative; z-index: 99}
+		.content {width:996px; margin:0 auto}
+.footer {width: 100%; text-align:center}
+
+/* 主导航模块 */
+.header .inner-wrap {width:1100px; height:36px; margin:0 auto}
+    .header .inner-wrap .logo {float: left; margin-right: 45px; display: block; width: 120px; height: 146px; background: url(../images/header-logo-v1-1.png) no-repeat; text-indent: -9999px}
+    .header .inner-wrap .main-nav {float: left; margin: 9px 5px 0 0}
+        .header .inner-wrap .main-nav li {float: left; margin: 0 40px 0 0}
+            .header .inner-wrap .main-nav li a em{font-size: 16px; color: #CCC}
+            .header .inner-wrap .main-nav li a:hover em{color: #FFF}
+            .header .inner-wrap .main-nav li a i.current {width: 10px; height: 10px; display: block; margin: 2px auto 0; background-position: -37px -125px}
+
+    .header .inner-wrap .sub-nav {float: left; margin-top: 8px}
+        .header .inner-wrap .sub-nav li {float: left; margin-right: 10px; display: inline; position: relative}
+            .header .inner-wrap .sub-nav li a {width: 21px; height: 21px; display: block; text-indent: -9999px}
+            .header .inner-wrap .sub-nav li a.weibo {background-position: -2px -2px}
+            .header .inner-wrap .sub-nav li a.weibo:hover {background-position: -2px -24px}
+            .header .inner-wrap .sub-nav li a.weixin {background-position: -30px -2px}
+            .header .inner-wrap .sub-nav li a.weixin:hover {background-position: -30px -24px}
+            .header .inner-wrap .sub-nav li a.mobile {background-position: -60px -2px}
+            .header .inner-wrap .sub-nav li a.mobile:hover {background-position: -60px -24px}
+            .header .inner-wrap .sub-nav li .sub {position: absolute; left: -28px; top: 18px; display: none}
+                .header .inner-wrap .sub-nav li .sub li {margin: 0}
+                    .header .inner-wrap .sub-nav li .sub li i {width: 118px; height: 146px; display: block}
+                    .header .inner-wrap .sub-nav li .sub li i.weixin {background: url(../images/weixin.png) no-repeat}
+                    .header .inner-wrap .sub-nav li .sub li i.mobile {background: url(../images/mobile.png) no-repeat}
+
+    .header .inner-wrap .search-wrap {width: 217px; height: 23px; background: #3F3F3F; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; float: left; margin: 6px 0 0 30px}
+        .header .inner-wrap .search-wrap .search-key {width: 165px; height: 19px; font-size: 14px; margin: 2px 5px; float: left; background: #3F3F3F; color: #BABABC}
+        .header .inner-wrap .search-wrap .search-btn {width: 32px; height: 21px; float: right; background-position: -37px -106px; margin: 1px 1px 0 0; cursor: pointer}
+
+    .header .inner-wrap .user-nav {position:relative; float: right; margin-top: 9px; height: 20px; display: inline}
+        .header .inner-wrap .user-nav li {float: left; margin-left: 5px; display: inline; position: relative}
+            .header .inner-wrap .user-nav a i {width: 15px; height: 15px; float: left}
+            .header .inner-wrap .user-nav a i.account {background-position: -143px 0px}
+            .header .inner-wrap .user-nav a:hover i.account {background-position: -143px -22px}
+            .header .inner-wrap .user-nav a em {float: left; margin: 2px 0 0 6px; display: inline; color: #CCC}
+            .header .inner-wrap .user-nav a:hover em {color: #9DCE6E}
+
+/* 底部模块 */
+.footer .website-map {margin-top: 1px; width: 100%; height: 368px; background: #4B5168 url(../images/website-map-bg.jpg) left bottom repeat-x}
+
+    .footer .website-map .inner-wrap {margin: 0 auto; width: 996px}
+        .footer .website-map .inner-wrap .logo-wrap {width: 146px; height: 368px; float: left; background: #83C335 url(../images/logo-wrap-bg.jpg) left bottom repeat-x; margin-right: 55px; display: inline}
+            .footer .website-map .inner-wrap .logo-wrap .logo {margin: 20px auto; display: block; width: 112px}
+            .footer .website-map .inner-wrap .logo-wrap .mobile {margin: 20px auto; width: 110px}
+            .footer .website-map .inner-wrap .logo-wrap .mobile-text {margin-top: 7px; display: block; color: #FFF; font-weight: 700}
+
+        .footer .website-map .inner-wrap .shortcut-wrap {float: left;}
+            .footer .website-map .inner-wrap .shortcut-wrap .link-box {margin-top: 28px}
+                .footer .website-map .inner-wrap .shortcut-wrap .link-box dl {float: left; font-size: 16px; margin: 0 110px 0 0; text-align: left}
+                .footer .website-map .inner-wrap .shortcut-wrap .link-box dl.nmr {margin-right: 0}
+                    .footer .website-map .inner-wrap .shortcut-wrap .link-box dl dt {color: #FFF; font-weight: 700; margin-bottom: 12px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .link-box dl dd a {color: #959FB1; display: block; font-size: 16px; margin-bottom: 12px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .link-box dl dd a:hover {color: #E6E7EB}
+
+            .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav {margin: 40px 0 0 362px}
+                .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li {float: left; display: inline; margin-left: 40px; position: relative}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a {width: 58px; height:58px; display: block; text-indent: -9999px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.weibo {background-position: -2px -140px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.weibo:hover {background-position: -2px -202px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.weixin {background-position: -63px -140px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.weixin:hover {background-position: -63px -202px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.qq {background-position: -123px -140px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.qq:hover {background-position: -123px -202px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.letter {background-position: -186px -140px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li a.letter:hover {background-position: -186px -202px}
+                    .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li .sub {position: absolute; left: -6px; top: -135px; display: none}
+                        .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li .sub li {margin: 0}
+                            .footer .website-map .inner-wrap .shortcut-wrap .shortcut-nav li .sub li i
+{width: 118px; height: 146px; background: url(../images/footer-weixin.png) no-repeat; display: block}
+
+.footer .links {margin-top: 1px; height:155px; background: #9FAABD}
+    .footer .links .inner-wrap {margin: 0 auto; width: 996px}
+        .footer .links .inner-wrap ul {padding-top: 36px}
+            .footer .links .inner-wrap ul li {float: left; margin-right: 24px}
+            .footer .links .inner-wrap ul li.nmr {margin-right: 0}
+
+.footer .copyright {margin-top: 1px; height:66px; background: #E5EAF2}
+    .footer .copyright p {color: #576171; font-weight: 500; padding-top: 25px}
+        .footer .copyright p span {margin-left: 10px}
+            .footer .copyright p span a {color: #576171}
+            .footer .copyright p span a:hover {text-decoration: underline}
+
+/* Banner模块 */
+.banner {width: 100%; position: relative; top: -111px}
+    .banner .banner-wrap {font-size: 0}
+    .banner .help-wrap {width: 30px; height: 30px; position: absolute; bottom: 11%; left: 80%;}
+        .banner .help-wrap .help-btn {display: block; width: 30px; height: 30px; background-position: -2px -106px; text-indent: -9999px; overflow:hidden}
+
+/* Login模块 */
+.login-wrap {width: 340px; border-bottom: 1px solid #ecf2f5; margin: 25px auto 0}
+    .login-wrap .title {height: 40px}
+    .login-wrap .title .fl {float: left; font-size: 30px; line-height: 40px; color: #292929}
+    .login-wrap .title .fr {float: right; font-size: 18px; line-height: 50px; color: #707070}
+        .login-wrap .title .fr a {font-size: 18px; line-height: 50px; color: #FF4200; margin-left: 5px}
+    .login-wrap .login-error {color: #fff; line-height: 20px; padding: 4px 10px; text-align: center; font-size: 14px;  background: #FF4200; margin: 20px 0 10px; display: none}
+
+    .login-wrap .login-form .input-wrap input {display: block; height: 40px; line-height: 40px; margin-top: 10px; width: 100%; border: 1px solid #DAE2E5; text-indent: 10px; overflow: hidden; color: #979696; -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in;}
+    .login-wrap .login-form .input-wrap input:focus {border-color: #ff9600}
+    .login-wrap .login-form .input-wrap .username {margin-top: 15px}
+
+    .login-wrap .login-form .btn-wrap {line-height: 70px; color: #6B6A6A; height: 80px}
+        .login-wrap .login-form .btn-wrap .login-submit {width: 130px; height: 40px; margin: 15px 20px 0 0; float: left; position: relative}
+            .login-wrap .login-form .btn-wrap .login-submit input {width: 130px; height: 40px; line-height: 40px; color: #fff; background: #70CA10; display: block; text-align: center; font-size: 20px; border: none; cursor: pointer}
+            .login-wrap .login-form .btn-wrap .login-submit input:hover {background: #76bf48}
+            .login-wrap .login-form .btn-wrap .login-checkbox {float: left}
+                .login-wrap .login-form .btn-wrap .login-checkbox input {vertical-align: middle}
+                .login-wrap .login-form .btn-wrap .login-checkbox label {vertical-align: middle; margin: 0 0 -1px 3px; font-size: 12px; color: #6B6A6A}
+                .login-wrap .login-form .btn-wrap .forget-psw {float: right; padding-top: 2px}
+                .login-wrap .login-form .btn-wrap .forget-psw a {font-size: 12px; color: #6B6A6A}
+
+.third-login-wrap {padding: 25px 0 0 34px}
+    .third-login-wrap h3 {font-size: 12px; color: #6B6A6A}
+    .third-login-wrap ul {margin-top: 25px}
+        .third-login-wrap ul li {display: block; float: left; margin-bottom: 10px}
+            .third-login-wrap ul li a {display: block; float: left; height: 40px; line-height: 40px; width: 160px; color: #fff; text-indent: 60px}
+            .third-login-wrap ul li a.sina-weibo {background: #d63b22 url(../images/icon/weibo.png) no-repeat 0px -5px;}
+            .third-login-wrap ul li a.qq {background: #3eb0d8 url(../images/icon/qq.png) no-repeat 0px -5px; margin-left: 22px}
+
+/* 错误Label */
+label.error {color: #FF4200; padding-top: 5px; display: block}
+
+/* 404页面 */
+.show-page-404 {background: #EFF0E6 url(../images/show-404-bg-v2.jpg) center center no-repeat; width: 965px; height: 521px; margin: 40px auto}
+
+/* 精灵 */
+.sprite {background: url(../images/sprite.png) no-repeat}
+
+/* 高亮 */
+.highlight {color: #EB0B0B}
+
+/* Loading版本1 - 图片预载 */
+.loading-v1 {background:url(../images/loading-v1-1.gif) no-repeat center; display: block}
+
+/* Loading版本2 */
+.loading-v2 {display: block; z-index:1; width:16px; height:16px; position:absolute; left: 50%; top: 50%; margin-top:-8px; margin-left:-8px; background:url(../images/loading-v2-1.png) no-repeat; vertical-align: middle; -webkit-animation: loading-v2 0.8s linear infinite; -moz-animation: loading-v2 0.8s linear infinite; -o-animation: loading-v2 0.8s linear infinite; animation: loading-v2 0.8s linear infinite}
+    @-webkit-keyframes loading-v2 {0% {-webkit-transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg)}}
+    @-moz-keyframes loading-v2 {0% {-webkit-transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg)}}
+    @-o-keyframes loading-v2 {0% {-webkit-transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg)}}
+    @keyframes loading-v2 {0% {-webkit-transform: rotate(0deg)} 100% {-webkit-transform: rotate(360deg)}}
+
+/* 分页按钮 */
+.pager-v1 {padding: 0 0 25px 0}
+    .pager-v1 a {font-family: Tahoma; float: left; color: #666; font-size:14px; line-height:24px; font-weight: normal; text-align: center; border: 1px solid #BBB; min-width: 14px; padding: 0 7px; margin: 0 0 0 5px; -moz-border-radius: 1px; -webkit-border-radius: 1px; border-radius: 1px; /*box-shadow: 0 1px 2px rgba(0,0,0,0.2);*/ background: #efefef; /* Old browsers */ background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%); /* IE10+ */ background: linear-gradient(top, #ffffff 0%,#efefef 100%) /* W3C */}
+    .pager-v1 a:hover {text-decoration: none; background: #FCFCFC}
+    .pager-v1 a.current {background: #666; color: #FFF; border-color: #444; /*box-shadow: 0 1px 0 rgba(255,255,255,1), 0 0 2px rgba(0, 0, 0, 0.3) inset;*/ cursor: default}
+    .pager-v1 a.current:hover {text-decoration: none; background: #666}
+
+/* Title提示层 */
+.tipsy {font-size: 10px; position: absolute; padding: 5px; word-wrap: break-word; z-index: 100000}
+.tipsy-inner {background-color: #000; color: #FFF; max-width: 200px; padding: 6px 7px 5px 6px; text-align: center; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px}
+.tipsy-s .tipsy-arrow {position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent}
+
+/* 弹出框 */
+.reveal-modal-bg {position: fixed; height: 100%; width: 100%; background: #000; background: rgba(0,0,0,.8); z-index: 100; display: none; top: 0; left: 0; filter:alpha(opacity=30); -moz-opacity:0.3; opacity:0.3}
+    .reveal-modal {visibility: hidden; top: 100px; left: 50%; width: 520px; background: #FFF; position: absolute; z-index: 101; padding: 30px 20px 34px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0 0 10px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4); -box-shadow: 0 0 10px rgba(0,0,0,.4); border-top: 3px solid #76bf48}
+    .reveal-modal.small {width: 200px}
+    .reveal-modal.medium {width: 400px}
+    .reveal-modal.large {width: 600px}
+    .reveal-modal.xlarge {width: 800px}
+        .reveal-modal .close-reveal-modal {font-size: 36px; line-height: .5; position: absolute; top: 20px; right: 20px; color: #7F7F7F; font-weight: bold; text-shadow: 0 -1px 1px rgba(0,0,0,.6); cursor: pointer; -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out}
+        .reveal-modal .close-reveal-modal:hover {-webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); transform: rotate(-180deg)}
+
+/* 信息弹出框 */
+#information-modal {top: -20px; padding: 30px 30px 15px; width: auto; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; border: 3px solid #CCC}
+#information-modal .close-reveal-modal {display: none}
+#information-modal h1 {font-size: 14px}
+
+/* smart-green表单 */
+.smart-green {padding: 30px 30px 0}
+    .smart-green h3.warning {text-align: center; background: #FF4200; padding: 7px; color: #FFF; margin-bottom: 15px; display: none}
+    .smart-green label {display: block; margin: 0px 0px 20px}
+        .smart-green label span {float: left; margin-bottom: 8px; color: #5E5E5E}
+        .smart-green label a.url {margin-top: 10px; color: #5EA2C2; float: right}
+        .smart-green label a.url:hover {text-decoration: underline}
+        .smart-green label input[type="text"], .smart-green label textarea, .smart-green label select {height: 30px; line-height:15px; width: 98%; padding: 0px 0px 0px 5px; border: 1px solid #E5E5E5; background: #FBFBFB; outline: 0; color: #8C8C8C; -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2); box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2)}
+        .smart-green label textarea {height:100px; padding-top: 10px}
+        .smart-green label .button {background-color: #4ABD58; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-border-radius: 3px; border: none; padding: 5px 15px 7px 15px; color: #FFF; text-shadow: 1px 1px 1px #949494}
+        .smart-green label .button:hover {background-color: #59CE67}
+
+/* 回到顶部 */
+#gotoTop {bottom: 150px; display: none; left: 50%; margin-left: 510px; position: fixed}
+    #gotoTop a, #gotoTop a:hover {background: url(../images/gotop.gif) no-repeat; display: block; text-align: center; width: 50px; height: 50px; overflow: hidden; text-indent: -10000px; border: 1px solid #68A31B; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+    #gotoTop a:hover{background-position: -51px 0px}
+
+/* 面包屑导航 */
+.bread-crumb {width: 100%; margin-top: -102px; overflow: hidden}
+    .bread-crumb li {float: left; margin: 0 1.5em 0 0}
+    .bread-crumb li.current {font-weight: 500; background: none; padding: .5em; color: #444; font-size: 12px}
+        .bread-crumb li a {background: #ddd; padding: .5em 1em; float: left; text-decoration: none; color: #444; text-shadow: 0 1px 0 rgba(255,255,255,.5);  position: relative; font-size: 12px}
+        .bread-crumb li a:hover {background: #99db76}
+        .bread-crumb li a.s::before {content: ""; position: absolute; top: 50%; margin-top: -1.0em; border-width: 1.0em 0 1.0em 1em; border-style: solid; border-color: #ddd #ddd #ddd transparent; left: -1em}
+        .bread-crumb li a:hover::before {border-color: #99db76 #99db76 #99db76 transparent}
+        .bread-crumb li a::after {content: ""; position: absolute; top: 50%; margin-top: -1.0em; border-top: 1.0em solid transparent; border-bottom: 1.0em solid transparent; border-left: 1em solid #ddd; right: -1em}
+        .bread-crumb li a:hover::after {border-left-color: #99db76}
+
+/* 通用头像 */
+.avatar-wrap {position: relative; overflow: hidden; zoom: 1}
+    .avatar-wrap .avatar-inner-wrap {margin: 0}
+        .avatar-wrap .avatar-inner-wrap-m {width: 58px; height: 58px}
+    .avatar-wrap .avatar-container {position: relative; display: block}
+        .avatar-wrap .avatar-inner-wrap img {margin: 3px}
+    .avatar-wrap .avatar-container-m {width: 50px; height: 50px}
+    .avatar-wrap .avatar-cover {position: absolute}
+    .avatar-wrap .avatar-cover-m {width: 58px; height: 58px; background: url(../images/avatar-m-bg.png) no-repeat}

@@ -1,0 +1,37 @@
+function module4BackResize(o) {
+    var w = o.width(), p = w > 1600 ? "/static/images/index-activity-bg-v-5-b.jpg" : "/static/images/index-activity-bg-v-5.jpg";
+    o.css('background', '#A9D8E0 url(' + p + ') ' + (w / 2 + 1) + 'px center no-repeat');
+}
+
+$(document).ready(function(){
+    $('.help-btn').tipsy({
+        gravity: 's',
+        fade: true
+    });
+
+    var	soundPlayer = $("#sound-player"), optPlayFirst = false, optAutoPlay = true, firstTrack = true;
+
+    soundPlayer.jPlayer({
+        ready: function () {
+            $(".sound .info-list .track-default").click();
+        }
+    });
+
+    $(".sound .info-list .track").click(function(e) {
+        soundPlayer.jPlayer("setMedia", {
+            mp3: $(this).attr("data-url")
+        });
+        if((optPlayFirst && firstTrack) || (optAutoPlay && !firstTrack)) {
+            soundPlayer.jPlayer("play");
+        }
+        firstTrack = false;
+        $(this).blur();
+        return false;
+    });
+
+    var module4Obj = $(".index-activity");
+    module4BackResize(module4Obj);
+    $(window).resize(function() {
+        module4BackResize(module4Obj);
+    });
+});

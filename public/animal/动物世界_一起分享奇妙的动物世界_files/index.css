@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* 顶导重置 */
+.header {border-bottom: 1px solid #A1AE60; background: url(../images/header-bg.png) repeat-x}
+
+/* Banner重置 */
+.banner {top: -37px}
+    .banner .logo-wrap {width: 181px; position: absolute; top: 13%; left: 50%; margin-left: -90px}
+    .banner .search-wrap {width: 556px; height: 60px; background: #FFF; -moz-border-radius: 14px; -webkit-border-radius: 14px; border-radius: 14px; position: absolute; bottom: 8%; left: 50%; margin-left: -278px}
+        .banner .search-wrap .search-key {width: 460px; height: 50px; font-size: 18px; margin: 5px 10px; float: left}
+        .banner .search-wrap .search-btn {width: 69px; height: 56px; float: right; background-position: -2px -48px; margin: 2px 2px 0 0; cursor: pointer}
+
+/* 首页新增动物及动物叫声模块 */
+.index-wild-sound {width: 100%; height: 576px; margin-top: -36px; background: url(../images/index-wild-sound-bg.jpg) repeat-x}
+    .index-wild-sound .inner-wrap {margin: 0 auto; width: 996px}
+        .index-wild-sound .inner-wrap .box {width: 465px; margin-top: 47px}
+
+            .index-wild-sound .inner-wrap .box h3 {font-size: 24px; color: #FFF}
+                .index-wild-sound .inner-wrap .box h3 span {font-size: 20px; font-family: Verdana; margin-left: 7px}
+
+            .index-wild-sound .inner-wrap .box .inner-box {height: 410px; margin-top: 14px; background: url(../images/blank.png) repeat}
+
+            .index-wild-sound .inner-wrap .increase .inner-box {padding-top: 33px}
+                .index-wild-sound .inner-wrap .increase .inner-box .image-wrap {width: 352px; height: 272px; margin: 0 auto; background: url(../images/sound-box-foot.png) no-repeat center bottom;}
+                    .index-wild-sound .inner-wrap .increase .inner-box .image-wrap .image-inner-wrap {height: 232px; margin: 0 auto; padding-top: 30px; background: #DEF6B0}
+                        .index-wild-sound .inner-wrap .increase .inner-box .image-wrap .image-inner-wrap a {width: 290px; height: 200px; display: block; margin: 0 auto}
+                            .index-wild-sound .inner-wrap .increase .inner-box .image-wrap .image-inner-wrap a:hover img {filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8}
+
+                .index-wild-sound .inner-wrap .increase .inner-box .text-wrap {width: 372px; margin: 20px auto; color: #26282A}
+                    .index-wild-sound .inner-wrap .increase .inner-box .text-wrap p {margin-bottom:10px; line-height: 24px}
+                        .index-wild-sound .inner-wrap .increase .inner-box .text-wrap p span {font-size: 18px; float: left}
+                        .index-wild-sound .inner-wrap .increase .inner-box .text-wrap p em {margin: 0 auto; float: right; width: 295px}
+                            .index-wild-sound .inner-wrap .increase .inner-box .text-wrap p em a {font-size: 18px}
+
+            .index-wild-sound .inner-wrap .sound .inner-box {height: 442px}
+                .index-wild-sound .inner-wrap .sound .inner-box .info-list {padding: 15px 0 0 15px}
+                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li {margin-bottom: 15px}
+                        .index-wild-sound .inner-wrap .sound .inner-box .info-list li .image-wrap a:hover img {filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8}
+                        .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap {margin: 9px 0 0 15px; display: inline}
+                            .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap h3 {margin-bottom: 18px}
+                                .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap h3 a {font-size: 18px}
+                            .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p {margin-bottom: 8px}
+                                .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a {display: block; font-size: 14px; margin-bottom: 7px}
+                                .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a {display: block; font-size: 14px; margin-bottom: 7px}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a i {width: 19px; height: 19px; float: left}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a i.play-icon {background-position: -117px -2px}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a:hover i.play-icon {background-position: -117px -24px}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a i.show-icon {background-position: -89px -2px}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a:hover i.show-icon {background-position: -89px -24px}
+                                    .index-wild-sound .inner-wrap .sound .inner-box .info-list li .text-wrap p a em {float: left; margin: 2px 0 0 6px; display: inline}
+
+
+/* 首页热门标签模块 */
+.index-hot-tags {width: 100%; height: 579px; background: #F4FDDF url(../images/index-hot-tags-v-2.jpg) right center no-repeat}
+    .index-hot-tags .inner-wrap {margin: 0 auto; width: 996px}
+        .index-hot-tags .inner-wrap .module-title {padding: 30px 0 7px; color: #20201E; font-weight: 700}
+            .index-hot-tags .inner-wrap .module-title h3 {font-size: 24px}
+                .index-hot-tags .inner-wrap .module-title h3 span {font-size: 20px; margin-left: 13px}
+    .index-hot-tags .inner-wrap .content-title {color: #353535; font-weight: 700; border-bottom: 1px solid #979797}
+            .index-hot-tags .inner-wrap .content-title h3 {margin: 27px 0 21px; text-align: center}
+                .index-hot-tags .inner-wrap .content-title h3 a {font-size: 30px; color: #5A5A5A}
+                .index-hot-tags .inner-wrap .content-title h3 a:hover {color: #111}
+                    .index-hot-tags .inner-wrap .content-title h3 a span {font-size: 30px; margin-left: 17px}
+    .index-hot-tags .inner-wrap .content-wrap {margin-top: 38px}
+        .index-hot-tags .inner-wrap .content-wrap .image-wrap img {-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px}
+        .index-hot-tags .inner-wrap .content-wrap h3 span {font-size: 30px; margin-left: 17px}
+    .index-hot-tags .inner-wrap .content-wrap .text-wrap {display: inline; margin: 5px 0 0 37px; width: 705px}
+        .index-hot-tags .inner-wrap .content-wrap .text-wrap .summary {color: #5A5A5A; font-size: 14px; line-height: 36px}
+            .index-hot-tags .inner-wrap .content-wrap .text-wrap .summary a {color: #5A5A5A; font-size: 14px;}
+            .index-hot-tags .inner-wrap .content-wrap .text-wrap .summary a:hover {color: #111}
+        .index-hot-tags .inner-wrap .content-wrap .text-wrap .i {color: #FFF; background: #FBC713; font-size: 12px; margin-top: 60px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; width: 54px; height: 24px; line-height: 24px; text-align: center; vertical-align: middle}
+        .index-hot-tags .inner-wrap .content-wrap .text-wrap .tag {margin: 15px 0 0 2px}
+            .index-hot-tags .inner-wrap .content-wrap .text-wrap .tag a {margin-right: 24px; color: #5A5A5A; font-size: 14px; line-height: 30px}
+            .index-hot-tags .inner-wrap .content-wrap .text-wrap .tag a:hover {color: #111}
+
+/* 首页动物地理模块 */
+.index-geography-distribute {width: 100%; height: 682px; background: #294D6A}
+    .index-geography-distribute .inner-wrap {margin: 0 auto; width: 996px}
+        .index-geography-distribute .inner-wrap .module-title {padding: 34px 0 7px; color: #FFF; font-weight: 700}
+            .index-geography-distribute .inner-wrap .module-title h3 {font-size: 24px}
+                .index-geography-distribute .inner-wrap .module-title h3 span {font-size: 20px; margin-left: 13px}
+
+        .index-geography-distribute .inner-wrap .map {margin-top: 10px; background: url(../images/index-geography-map-bg.jpg) no-repeat; height: 428px; position: relative}
+
+            .index-geography-distribute .inner-wrap .map .state {position: absolute; text-align: center; line-height: 20px}
+                .index-geography-distribute .inner-wrap .map .state a {color: #292929; font-size: 16px; font-weight: 500; display: block}
+                .index-geography-distribute .inner-wrap .map .state a:hover {text-decoration: underline}
+            .index-geography-distribute .inner-wrap .map .north-america {top: 147px; left: 91px}
+            .index-geography-distribute .inner-wrap .map .europe {top: 136px; left: 350px}
+            .index-geography-distribute .inner-wrap .map .asia {top: 139px; left: 543px}
+            .index-geography-distribute .inner-wrap .map .south-america {top: 304px; left: 179px}
+            .index-geography-distribute .inner-wrap .map .afrika {top: 261px; left: 369px}
+            .index-geography-distribute .inner-wrap .map .oceania {top: 338px; left: 598px}
+
+            .index-geography-distribute .inner-wrap .map .zone {position: absolute}
+                .index-geography-distribute .inner-wrap .map .zone a {color: #FFF; font-size: 16px; font-weight: 500}
+                .index-geography-distribute .inner-wrap .map .zone a:hover {text-decoration: underline}
+            .index-geography-distribute .inner-wrap .map .frigid {top: 28px; left: 705px}
+            .index-geography-distribute .inner-wrap .map .sub-frigid {top: 72px; left: 845px}
+            .index-geography-distribute .inner-wrap .map .variable {top: 162px; left: 816px}
+            .index-geography-distribute .inner-wrap .map .semitropics {top: 227px; left: 729px}
+            .index-geography-distribute .inner-wrap .map .tropical {top: 285px; left: 816px}
+
+        .index-geography-distribute .inner-wrap .distribute {margin: 30px 0 0 30px}
+            .index-geography-distribute .inner-wrap .distribute h3 {color:#E5E5E5; font-size: 18px; font-weight: 500}
+            .index-geography-distribute .inner-wrap .distribute ul {margin-top: 20px}
+                .index-geography-distribute .inner-wrap .distribute ul li {float: left; margin-right: 15px; display: inline}
+                    .index-geography-distribute .inner-wrap .distribute ul li a {background: url(../images/index-distribute-bg.png) no-repeat; width: 72px; height: 72px; display: block; text-indent: -9999px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.congo {background-position: 0 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.congo {background-position: 0 -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.norway {background-position: -72px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.norway {background-position: -72px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.china {background-position: -144px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.china {background-position: -144px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.usa {background-position: -216px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.usa {background-position: -216px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.italy {background-position: -288px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.italy {background-position: -288px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.brazil {background-position: -360px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.brazil {background-position: -360px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.russia {background-position: -432px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.russia {background-position: -432px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.india {background-position: -504px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.india {background-position: -504px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.australia {background-position: -576px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.australia {background-position: -576px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.thailand {background-position: -648px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.thailand {background-position: -648px -72px}
+                    .index-geography-distribute .inner-wrap .distribute ul li a.all {background-position: -720px 0}
+                    .index-geography-distribute .inner-wrap .distribute ul li a:hover.all {background-position: -720px -72px}
+
+/* 首页活动模块 */
+.index-activity {width: 100%; height: 558px; background: #A9D8E0}
+    .index-activity .inner-wrap {margin: 0 auto; width: 996px}
+        .index-activity .inner-wrap .text-wrap .title {margin: 47px auto 0; text-align: center}
+            .index-activity .inner-wrap .text-wrap .title a {color: #222225; font-size: 24px; line-height: 40px; font-weight: 500}
+            .index-activity .inner-wrap .text-wrap .title a:hover {color: #111}
+            .index-activity .inner-wrap .text-wrap .summary {margin: 40px auto 0; width: 450px}
+                .index-activity .inner-wrap .text-wrap .summary p {color: #222225; line-height: 31px; font-size: 16px}
+            .index-activity .inner-wrap .text-wrap a.btn {color: #FFF; background: #6FC0CE; display: block; text-align: center; width:316px; height: 46px; line-height: 46px; vertical-align: middle; border: 1px solid #FFF; font-size: 16px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; margin: 50px auto 0}
+            .index-activity .inner-wrap .text-wrap a.btn:hover {background: #75C7D5}
+
+/* 首页专栏模块 */
+.index-scholars-news-knowledge {width: 100%; height: 328px; background: #EAF6F3}
+    .index-scholars-news-knowledge  .inner-wrap {margin: 0 auto; width: 996px}
+        .index-scholars-news-knowledge  .inner-wrap .common-box {margin-top: 42px; padding-top: 8px; width: 323px; height: 255px; float: left}
+            .index-scholars-news-knowledge  .inner-wrap .common-box h3 {margin-bottom: 40px}
+                .index-scholars-news-knowledge  .inner-wrap .common-box h3 a {color: #1B1B1B; font-size: 24px}
+                .index-scholars-news-knowledge  .inner-wrap .common-box h3 a:hover {color: #202020}
+                    .index-scholars-news-knowledge  .inner-wrap .common-box h3 a span {color: #1B1B1B; font-size: 18px; margin-left: 7px}
+
+            .index-scholars-news-knowledge  .inner-wrap .common-box li a {font-size: 16px; color: #4F4F4F; font-weight: 500}
+            .index-scholars-news-knowledge  .inner-wrap .common-box li a:hover {color: #202020}
+                .index-scholars-news-knowledge  .inner-wrap .common-box li a i {display: block; width: 6px; height: 6px; background: #ED7F6A; float: left; margin: 5px 10px 29px 2px}
+        .index-scholars-news-knowledge  .inner-wrap .common-box-s1 {border-left: 1px solid #AEBBC6; padding-left: 12px}
+
+/* 首页加入我们模块 */
+.index-join-us {width: 100%; position: relative}
+    .index-join-us .img-wrap {font-size: 0}
+    .index-join-us .text-wrap {text-align: center; color: #464646}
+        .index-join-us .text-wrap .title {font-size: 30px; font-weight: 500; line-height: 32px; position: absolute; top: 10%; left: 50%; margin-left: -268px}
+        .index-join-us .text-wrap .summary {font-size: 16px; font-weight: 500; line-height: 27px; position: absolute; top: 30%; left: 50%; margin-left: -433px}
+        .index-join-us .text-wrap .btn a {color: #FFF; background: #ED7F6A; display: block; text-align: center; width:316px; height: 46px; line-height: 46px; vertical-align: middle; border: 1px solid #FFF; font-size: 16px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;  position: absolute; top: 50%; left: 50%; margin-left: -158px}
+        .index-join-us .text-wrap .btn a:hover {background: #F5856F}

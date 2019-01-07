@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* start css reset*/
+html {
+	color: #AFB3BF; 
+	background: #FFF;
+}
+
+body {
+	line-height: 1;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,i,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,textarea,select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: normal;
+	vertical-align: baseline;
+}
+
+table {
+	border-collapse: collapse; /*表格的边框合并为一个单一的边框, separate属性表示边框分开*/
+	border-spacing: 0; /*相邻单元格的边框间的距离*/
+}
+
+:focus {
+	outline: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+caption,th,td {
+	text-align: left;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+}
+
+blockquote, q {
+	quotes:  '' '';
+}
+
+legend{
+	color: #000;
+}
+
+/* end css reset*/
+
+
+/* start site common */
+body,input,td,div,span,a,li,label,select,textarea,p,em,i,h1,h2,h3,h4,h5,h6,strong,em {
+	font-family: "Microsoft Yahei", "微软雅黑", Arial, STHeiti; /*Georgia, Tahoma, Helvetica, */
+	font-size: 14px;
+}
+
+a {
+	font-size: 14px;
+	color: #26282A;
+	text-decoration: none;
+	hide-focus: expression(this.hideFocus=true);
+}
+
+a:hover {
+	color: #000;
+}
+
+/* end site common */
+
+
+/* start clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden; /*元素仍占据其本来的空间*/
+}
+
+/* 这是对非IE6/7的处理，IE6/7并不支持生成元素(不支持伪类:before :after )*/ 
+.clearfix {
+	display: inline-block;
+}
+
+/*  
+ 这是对 Mac 上的IE浏览器进行的 */ 
+ 
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+/*  
+ 这是对 win 上的IE6浏览器进行的处理 */ 
+
+.clearfix {
+    display: block;
+}
+
+/* end clearfix */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden {
+	display: none
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 1px;
+	margin-top: -1px
+}
