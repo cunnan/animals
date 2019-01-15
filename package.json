@@ -28,6 +28,7 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "node-sass": "^4.11.0"
   }
 }
